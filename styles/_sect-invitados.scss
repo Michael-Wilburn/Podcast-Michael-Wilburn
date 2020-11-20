@@ -1,0 +1,49 @@
+.invitados {
+    z-index: 2;
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: wrap;
+
+    h2{
+        margin-left: 12.5rem;
+        position: relative;
+        font-family: $font-type0;
+        font-weight: 400;
+        text-align: left;
+        color: $color-font-one;
+        font-size: 3rem;
+        line-height: 3.88rem;
+        margin-bottom: 2.25rem;
+        font-weight: 400;
+        color: $color-font-one;
+    }
+}
+
+
+.fotos-cuadricula { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+        width: 33.3333%;
+    }
+}
+@media screen and (max-width:768px) {
+    .invitados{
+        margin-top: 3.375rem;
+        h2{
+            margin: 0 1rem 1rem 1rem;
+            font-size: 2.25rem;
+            line-height: 2.625rem;
+            margin-bottom: 0.875rem;
+        }
+    }
+    .fotos-cuadricula { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        img {
+            width: 100%;
+        }
+    }
+}

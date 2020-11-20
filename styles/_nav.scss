@@ -1,0 +1,114 @@
+nav {   
+    height: 5rem;
+    margin: 0 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu {
+    display: flex;
+    align-items: center;
+    
+    
+    ul {
+        list-style: none;
+        width: 100%;  
+    
+        li {
+            margin-left: 3rem;
+            display: inline-block;
+            
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $color-font-one;
+                font-family: $font-type;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.75rem;
+            }
+            a:hover {
+                font-family: $font-type;
+                text-decoration: line-through;
+                color: $color-one-hover;
+                cursor:pointer
+            }
+            a:active { 
+                color: $color-active;
+            }
+        }
+    }
+}
+.logo {
+    width: 2.25rem;
+}
+
+label #sign-one,
+label #sign-two {
+    display: none;
+    color: $color-font-two;
+    cursor: pointer;
+}
+#checkbox {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    label #sign-one {
+        display: block;
+    }
+   nav{
+        display: fixed;
+        margin: 0 1rem;
+        height: 2.75rem;
+    }
+   
+    .logo{
+        width: 1.5rem;
+    }
+    .menu {
+        margin: 0;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        ul{
+            margin: 0;
+            position: absolute;
+            width: 100%;
+            height: 14rem;
+            background: $color-four;
+            top: 2.75rem;       
+            left:-100%;
+            text-align: left;
+            z-index: 10;
+            display: none;
+            justify-content: space-evenly;
+            flex-direction: column;
+            
+            li{
+                display: block;
+                margin: 0;
+               
+                a{
+                    padding-left: 1rem;
+                    font-size:1rem ;
+                    color: $color-font-three;
+                }
+            }
+        }
+    }
+    #checkbox:checked ~ ul {
+        display:flex;
+        left: 0;
+    }
+    #checkbox:checked ~ label #sign-one {
+        display: none;
+    }
+    #checkbox:checked ~ label #sign-two {
+        display: block;
+    }
+}
+

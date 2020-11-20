@@ -1,0 +1,69 @@
+.episodios { 
+    height: 65.162rem;
+    position: relative;
+    z-index: 1;
+
+    h2 {
+        margin: 11.625rem 0 0 12.5rem;
+        font-family: $font-type0;
+        font-weight: 400;
+        color: $color-font-three;
+        z-index: 2;
+        font-size: 3rem;
+        line-height: 3.875rem;
+    }
+}
+.diagonal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65.162rem;
+    background-image: linear-gradient(225deg, $color-four 0%, $color-five 100%);
+    clip-path: polygon(0 17%, 100% 0%, 100% 85%, 0 100%);
+}
+.podcasts {
+    position: relative;
+    z-index: 2;
+    margin: 1.625rem 6.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.5rem;
+}
+
+iframe { 
+    border: 0;
+    max-height: 14.5rem;
+    width:100%;
+    height: 14.5rem;
+}
+@media screen and  ( max-width:768px) {
+    .episodios { 
+        height: 59rem;
+    
+        h2 {
+            margin: 4rem 0 0 1rem;
+            font-size: 2.25rem;
+            line-height: 2.625rem;
+        }
+    }
+    .diagonal {
+        height: 59rem;
+        clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0 100%);
+    }
+    .podcasts {
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+        margin: 1.5rem 1rem;
+
+    }
+    
+    iframe { 
+        border: 0;
+        max-height: 9.5rem;
+        width:100%;
+        height: 9.5rem;
+        
+    }
+
+}

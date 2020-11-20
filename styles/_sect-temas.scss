@@ -1,0 +1,62 @@
+.temas {
+    margin: 4rem 12.5rem 2.13rem;
+    h2 {
+        font-size: 3rem;
+        line-height: 3.88rem;
+        font-family: $font-type0;
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+        color: $color-font-one;
+        margin-bottom: 3.5rem;
+    }
+}
+.temas-iconos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.icon-box {
+    width: 12.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    h4 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-family: $font-type0;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        color: $color-font-one;
+        display:block;
+        width: inherit;
+        
+    }
+    img {
+        margin: 0.81rem 0;
+        max-width: 16.25rem;
+        
+    }
+}
+@media screen and (max-width:768px) {
+    .temas {
+        margin: 0;
+        text-align: left;
+        h2 {
+            font-size: 2.25rem;
+            line-height:  2.625rem;
+            margin: 3rem 1rem 1.5rem 1rem;
+            
+        }
+    }
+    .icon-box {
+        width: 100%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

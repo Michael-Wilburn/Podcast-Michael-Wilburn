@@ -1,0 +1,54 @@
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.63rem;
+    p{
+        margin-left: 6.25rem;
+        font-size: 1rem;
+        line-height: 1.75;
+        color: $color-font-one;
+        font-family: $font-type;
+    }
+}
+.iconos {
+    margin-right: 4rem;
+    border: 0 transparent;
+    a{
+        font-family: $font-type;
+        margin-right: 2.25rem;
+        color: $color-font-one;
+        cursor:pointer;
+        width: 1rem;
+        border: 0;
+        height: 1rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .redes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 7.5625rem;
+        p{
+            margin: 1.5rem 2.875rem 1rem ;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+        }
+    }
+    .iconos {
+        margin-right: 0;
+        width: 14.1875rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      
+        a{
+            margin-right:0;
+            height: 1rem;
+            margin-bottom: 1.9375rem;
+        }
+    }
+
+}
